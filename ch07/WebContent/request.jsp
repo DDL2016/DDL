@@ -4,18 +4,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>数据处理页面</title>
+<title>Insert title here</title>
 </head>
-<body bgcolor="#ccddee">
-   <%
-      String address=request.getParameter("link");
-   if(address!=null){
-	   if(address.equals("xs"))
-		   response.sendRedirect("request2.jsp");
-	   else
-		   response.sendRedirect("http://www.baidu.com");
-   }
-	   
-   %>
+<body>
+<form action="connect.jsp" method="post">
+    输入要查询的年龄：<input name="age" type="text">
+    <button type="submit">提交</button>
+</form>
 </body>
 </html>
